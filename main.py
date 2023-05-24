@@ -19,11 +19,6 @@ class Conta:
     def ativar_limite(self, quantia_limite):
         self.limite = quantia_limite
         self.limite2 = self.limite
-
-        #self.diferenca = self.limite - self.limite2
-        #print(f"limite fixo {self.limite}") #Debug
-       # print(f"limite manipulável{self.limite2}")  # Debug
-
     def depositar(self, quantia_deposito):
         if self.limite2 < self.limite:
             diferenca=self.limite-self.limite2
