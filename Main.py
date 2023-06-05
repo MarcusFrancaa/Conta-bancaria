@@ -1,0 +1,16 @@
+from func_banco import *
+
+c1=Conta(12345,'Marcus', 'Conta corrente')
+c2=Conta(4567,'Vitor', 'conta corrente')
+c1.ativa_conta()
+c1.ativar_limite(500.00)
+c1.sacar(20.00)
+c1.depositar(50.00)
+c1.sacar(300.00)
+c1.depositar(150.00)
+c1.verificar_saldo()
+c1.desativar_conta()
+c1.depositar(120.00)
+c1.verificar_saldo()
+c1.desativar_conta()
+print(c1.extrato_conta())
